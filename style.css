@@ -1,1 +1,386 @@
 
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* BODY */
+
+body{
+
+    background:#ffe6f0;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    overflow-x:hidden;
+    min-height:100vh;
+
+}
+
+
+/* ALL SECTIONS */
+
+section{
+
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+}
+
+
+/* HIDE PAGES */
+
+.hide{
+
+    display:none;
+
+}
+
+
+/* HEADINGS */
+
+h1{
+
+    font-size:35px;
+    color:#ff1493;
+    margin-bottom:20px;
+
+}
+
+
+h2{
+
+    font-size:22px;
+    color:#ff69b4;
+    margin-bottom:20px;
+
+}
+
+
+p{
+
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    max-width:500px;
+
+}
+
+
+
+/* INPUT BOX */
+
+input{
+
+    width:280px;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    outline:none;
+    font-size:18px;
+    text-align:center;
+
+}
+
+
+
+/* BUTTON */
+
+button{
+
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+    background:#ff1493;
+    color:white;
+    transition:0.4s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+/* IMAGES */
+
+img{
+
+    width:280px;
+    margin-top:20px;
+    border-radius:20px;
+
+}
+
+
+
+/* PHOTO GALLERY */
+
+#gallery-image{
+
+    width:300px;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 0 25px pink;
+
+}
+
+
+
+
+/* LETTER BOX */
+
+#letter-box{
+
+    display:none;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 0 20px pink;
+
+}
+
+
+
+/* THANK YOU PAGE */
+
+#thankyou-page{
+
+    background-image:url("images/final_bg.jpg");
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+
+/* HAPPY PAGE */
+
+#happy-page{
+
+    background-image:url("images/happy_bg.jpg");
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+
+
+/* FLOATING ANIMATION */
+
+img{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+/* FADE ANIMATION */
+
+section{
+
+    animation:fade 1.5s ease;
+
+}
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+
+/* HEARTS */
+
+.hearts::before{
+
+content:"❤️ ❤️ ❤️ ❤️ ❤️";
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+font-size:30px;
+
+animation:heartMove 8s linear infinite;
+
+opacity:0.5;
+
+}
+
+
+
+@keyframes heartMove{
+
+0%{
+
+transform:translateY(100vh);
+
+}
+
+100%{
+
+transform:translateY(-100vh);
+
+}
+
+}
+
+
+
+/* LOADING PAGE */
+
+#loading-page{
+
+    background:white;
+
+}
+
+
+
+/* CAKE PAGE */
+
+#cake-page{
+
+    background:#fff0f5;
+
+}
+
+
+
+/* MESSAGE PAGE */
+
+#message-page{
+
+    background:#fff5f8;
+
+}
+
+
+
+/* LETTER PAGE */
+
+#letter-page{
+
+    background:#fff0f8;
+
+}
+
+
+
+/* FINAL CAKE PAGE */
+
+#final-cake-page{
+
+    background:#ffe6f2;
+
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:600px){
+
+h1{
+
+font-size:28px;
+
+}
+
+
+h2{
+
+font-size:18px;
+
+}
+
+
+p{
+
+font-size:16px;
+
+}
+
+
+img{
+
+width:250px;
+
+}
+
+
+button{
+
+width:220px;
+
+}
+
+
+input{
+
+width:250px;
+
+}
+
+
+}
