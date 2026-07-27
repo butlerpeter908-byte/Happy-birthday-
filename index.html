@@ -1,1 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Loading Screen -->
+
+<section id="loading-page">
+
+<h1>Loading Your Birthday Surprise...</h1>
+
+</section>
+
+
+<!-- DOB PAGE -->
+
+<section id="dob-page" class="hide">
+
+<h1>Enter Your Date Of Birth</h1>
+
+<input type="text"
+id="dob"
+placeholder="DD/MM/YY">
+
+<br><br>
+
+<button onclick="checkDOB()">
+
+Continue
+
+</button>
+
+</section>
+
+
+<!-- CAKE PAGE -->
+
+<section id="cake-page" class="hide">
+
+<h1>Make A Wish</h1>
+
+<img src="images/cake1.png" alt="Birthday Cake">
+
+<p>
+
+Lighting Candles...
+
+</p>
+
+</section>
+
+
+
+<!-- HAPPY BIRTHDAY PAGE -->
+
+<section id="happy-page" class="hide">
+
+<h1>
+
+Happy Birthday ❤️
+
+</h1>
+
+<h2>
+
+May Your Smile Never Fade.
+
+</h2>
+
+</section>
+
+
+
+<!-- MESSAGE PAGE -->
+
+<section id="message-page" class="hide">
+
+<h1>
+
+A Special Message For You
+
+</h1>
+
+<p>
+
+Today is all about you.
+
+May this birthday bring you
+endless happiness, success,
+good health and beautiful memories.
+
+Stay blessed and keep smiling.
+
+Happy Birthday!
+
+</p>
+
+</section>
+
+
+
+
+<!-- SECRET LETTER PAGE -->
+
+<section id="letter-page" class="hide">
+
+<h1>
+
+I Have Something For You
+
+</h1>
+
+<img src="images/envelope.png"
+alt="Envelope">
+
+
+<br><br>
+
+<button onclick="openLetter()">
+
+Open My Letter
+
+</button>
+
+
+
+<div id="letter-box">
+
+<p>
+
+Dear Birthday Girl,
+
+Thank you for coming into my life.
+
+You are one of the best things
+that ever happened to me.
+
+I hope every single day of your life
+becomes more beautiful than today.
+
+Always stay happy.
+
+Happy Birthday Once Again.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<!-- PHOTO GALLERY PAGE -->
+
+<section id="gallery-page" class="hide">
+
+<h1>
+
+Our Beautiful Memories
+
+</h1>
+
+<img id="gallery-image"
+src="images/photo1.jpg"
+alt="Birthday Photo">
+
+</section>
+
+
+
+
+<!-- FINAL CAKE PAGE -->
+
+<section id="final-cake-page" class="hide">
+
+<h1>
+
+One Last Surprise
+
+</h1>
+
+<img src="images/cake2.png"
+alt="Final Cake">
+
+<br><br>
+
+<button onclick="blowCandles()">
+
+Blow The Candles
+
+</button>
+
+</section>
+
+
+
+
+<!-- THANK YOU PAGE -->
+
+<section id="thankyou-page" class="hide">
+
+<h1>
+
+THANK YOU
+FOR EXISTING ❤️
+
+</h1>
+
+<p>
+
+Happy Birthday!
+
+I Love You So Much.
+
+May God Always Bless You.
+
+</p>
+
+</section>
+
+
+
+
+<!-- Floating Hearts -->
+
+<div class="hearts"></div>
+
+
+
+<!-- Birthday Music -->
+
+<audio id="birthdaySong"
+src="music/birthday.mp3">
+
+</audio>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
