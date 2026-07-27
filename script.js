@@ -20,7 +20,7 @@ document.getElementById("dob-page").style.display = "block";
 // DOB VERIFICATION
 // =========================
 
-const correctDOB = "28/07/06"; // Apni DOB yaha likhna
+const correctDOB = "13/03/06"; // Apni DOB yaha likhna
 
 
 function checkDOB() {
